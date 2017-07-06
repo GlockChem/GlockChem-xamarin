@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Core
 {
@@ -22,17 +23,13 @@ namespace Core
 		/// <param name="cols"> 新矩阵的列数。 </param>
 		public Matrix(int lines, int cols)
 		{
-			assert((lines > 0) && (cols > 0));
+			Debug.Assert((lines > 0) && (cols > 0));
 			// 初始化矩阵
 //JAVA TO C# CONVERTER NOTE: The following call to the 'RectangularArrays' helper class reproduces the rectangular array initialization that is automatic in Java:
 //ORIGINAL LINE: matrix = new int[lines][cols];
 			matrix = RectangularArrays.ReturnRectangularIntArray(lines, cols);
 		}
 
-        private void assert(bool v)
-        {
-            throw new NotImplementedException();
-        }
 
         public Matrix(int[][] matArray)
 		{

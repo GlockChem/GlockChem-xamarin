@@ -111,50 +111,55 @@ namespace Core
 		{
 			Match sm; // 正则匹配结果
 
-			Regex e = new Regex(@"^([A-Z][a-z]*)(\\d*)"), f = new Regex(@"\\*(\\d*)([^*]+)[\\*]??"), g = new Regex(@"\\(([^\\*]*)\\)(\\d*)"), h = new Regex(@"\\(([^\\*\\(]*)\\)(\\d*)"); // 括号匹配#2 -  括号匹配#1 -  段分隔符"*"匹配 -  原子匹配正则
-
-			while (inFormula.Length > 0)
+            Regex e = new Regex(@"^([A-Z][a-z]*)(\d*)"),    // 原子匹配正则
+                f = new Regex(@"\*(\d*)([^*]+)[\*]??"), // 段分隔符"*"匹配 
+                g = new Regex(@"\(([^\*]*)\)(\d*)"),   // 括号匹配#1
+                h = new Regex(@"\(([^\*\(]*)\)(\d*)");// 括号匹配#2
+            while (inFormula.Length > 0)
 			{
-				sm = e.Match(inFormula);
-							// 找一坨原子 
-							// sm[1]: 原子名称
-							// sm[2]: 原子数量(有可能为空白)
-				if (sm.Success)
+				//sm = Regex.Matches(inFormula, e);
+                // 找一坨原子 
+                // sm[1]: 原子名称
+                // sm[2]: 原子数量(有可能为空白)
+                if (e.IsMatch(inFormula))
 				{ // 若成功提取出原子
 					int tempNum;
-					if (sm.Groups.(2).Empty)
+                    sm = e.Match(inFormula);
+					if (sm.Groups[2].ToString()=="")
 					{ // 若没有下标
 						tempNum = 1 * numMultiplier; // 默认下标为1
 					}
 					else
-					{ // 有下标
-						tempNum = Convert.ToInt32(sm.group(2)) * numMultiplier;
+                    { // 有下标
+                        tempNum = Convert.ToInt32(sm.Groups[2].ToString()) * numMultiplier;
+                        
 					}
 
-					string tempStr = sm.group(1); // 交给插入算法处理
+					string tempStr = sm.Groups[1].ToString(); // 交给插入算法处理
 					this.insertList(new Pair<string, int?>(tempStr, tempNum));
-					inFormula = inFormula.Substring(sm.group(0).length());
+					inFormula = inFormula.Substring(sm.Groups[0].Length);
 				}
 				else if (inFormula[0] == '*')
-				{ // 又来一段
-					sm = f.matcher(inFormula); // 找段
-												// sm[1]: 段乘数
-												// sm[2]: 段内容
-					if (sm.find())
+				{ 
+					if (f.IsMatch(inFormula))
 					{
-						int tempNum;
-						if (sm.group(1).Empty)
+                        // 又来一段
+                        sm = f.Match(inFormula); // 找段
+                                                          // sm[1]: 段乘数
+                                                          // sm[2]: 段内容
+                        int tempNum;
+						if (! sm.Groups[1].Success)
 						{
 							tempNum = 1;
 
 						}
 						else
 						{
-							tempNum = Convert.ToInt32(sm.group(1));
+							tempNum = Convert.ToInt32(sm.Groups[1].ToString());
 						}
 
-						string strTemp = sm.group(2);
-						inFormula = inFormula.Substring(sm.group(0).length());
+						string strTemp = sm.Groups[2].ToString();
+						inFormula = inFormula.Substring(sm.Groups[0].Length);
 						this.parseFormula(strTemp, tempNum);
 					}
 					else
@@ -188,23 +193,22 @@ namespace Core
 
 					if (intCounter == 1)
 					{ // 仅仅出现了一次，说明在内层
-						sm = h.matcher(inFormula);
-						sm.find();
+						sm = h.Match(inFormula);
 
-						if (!sm.group(1).Empty)
+						if (sm.Groups[1].Success)
 						{
 							int tempNum;
-							if (sm.group(2).Empty)
+							if (!sm.Groups[2].Success)
 							{
 								tempNum = 1 * numMultiplier;
 							}
 							else
 							{
-								tempNum = Convert.ToInt32(sm.group(2)) * numMultiplier;
+								tempNum = Convert.ToInt32(sm.Groups[2].ToString()) * numMultiplier;
 							}
 
-							string strTemp = sm.group(1);
-							inFormula = inFormula.Substring(sm.group(0).length());
+							string strTemp = sm.Groups[1].ToString();
+							inFormula = inFormula.Substring(sm.Groups[0].Length);
 							this.parseFormula(strTemp, tempNum);
 						}
 						else
@@ -214,24 +218,21 @@ namespace Core
 					}
 					else if (intCounter == 2)
 					{ // 出现了不止一次，说明在外层
-						sm = g.matcher(inFormula);
-						sm.find();
 
-						sm = h.matcher(inFormula);
-						sm.find();
+						sm = h.Match(inFormula);
 
 						int tempNum;
-						if (sm.group(2).Empty)
+						if (!sm.Groups[2].Success)
 						{
 							tempNum = 1 * numMultiplier;
 						}
 						else
 						{
-							tempNum = Convert.ToInt32(sm.group(2)) * numMultiplier;
+							tempNum = Convert.ToInt32(sm.Groups[2].ToString()) * numMultiplier;
 						}
 
-						string strTemp = sm.group(1);
-						inFormula = inFormula.Substring(sm.group(0).length());
+						string strTemp = sm.Groups[1].ToString();
+						inFormula = inFormula.Substring(sm.Groups[0].Length);
 						this.parseFormula(strTemp, tempNum);
 					}
 				}

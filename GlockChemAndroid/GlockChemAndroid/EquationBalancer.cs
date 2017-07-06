@@ -147,7 +147,7 @@ namespace Core
 			// 给原子类型编号，顺便得到总行数
 			foreach (KeyValuePair<string, int?> entry in mapAtom.SetOfKeyValuePairs())
 			{
-				entry.Value = lines++;
+                mapAtom[entry.Key] = lines++;
 			}
 
 			// 建立矩阵对象

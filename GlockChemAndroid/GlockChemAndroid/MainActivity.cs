@@ -12,7 +12,9 @@ namespace GlockChemAndroid
     [Activity(Label = "GlockChemAndroid", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-
+        Core.Equation equation = null;
+        Core.EquationCalculator calc = null;
+        Core.EquationBalancer balance;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -25,9 +27,8 @@ namespace GlockChemAndroid
             Button b = FindViewById<Button>(Resource.Id.BB);
             EditText t = FindViewById<EditText>(Resource.Id.editText1);
             TextView er = FindViewById<TextView>(Resource.Id.er);
-            Core.Equation equation = null;
-            Core.EquationCalculator calc = null;
-            Core.EquationBalancer balance;
+            equation = null;
+            balance = null;
             b.Click += delegate {
                 String strInput = t.Text;
                 if (strInput == "")
@@ -40,7 +41,8 @@ namespace GlockChemAndroid
                 }
                 catch (Exception e)
                 {
-                    er.Text = "分析错误：" + e.GetBaseException();
+                    er.Text = "分析错误：" + e.StackTrace;
+                    Console.WriteLine("Here's the trace::"+e.StackTrace);
                     return;
                 }
                 balance = new Core.EquationBalancer(equation);
@@ -64,6 +66,10 @@ namespace GlockChemAndroid
         protected void cal(string s)
         {
             SetContentView(Resource.Layout.colv);
+            TextView t1 = FindViewById<TextView>(Resource.Id.textView1);
+            t1.Text=equation.ToString();
+            Button b = FindViewById<Button>(Resource.Id.BB);
+            b.Click += delegate{ init(); };
         }
     }
 }
