@@ -117,10 +117,12 @@ namespace Core
                 h = new Regex(@"\(([^\*\(]*)\)(\d*)");// 括号匹配#2
             while (inFormula.Length > 0)
 			{
+                Console.WriteLine("Here's the trace::" + inFormula);
 				//sm = Regex.Matches(inFormula, e);
                 // 找一坨原子 
                 // sm[1]: 原子名称
                 // sm[2]: 原子数量(有可能为空白)
+                Console.WriteLine("Here's the trace::" + e.IsMatch(inFormula));
                 if (e.IsMatch(inFormula))
 				{ // 若成功提取出原子
 					int tempNum;
@@ -131,6 +133,7 @@ namespace Core
 					}
 					else
                     { // 有下标
+                        Console.WriteLine("Here's the trace::" + sm.Groups[2].ToString());
                         tempNum = Convert.ToInt32(sm.Groups[2].ToString()) * numMultiplier;
                         
 					}

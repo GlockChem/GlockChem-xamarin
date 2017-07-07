@@ -29,7 +29,13 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
     </LinearLayout>
-    <LinearLayout
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <GridLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,10 +48,10 @@
             android:layout_height="match_parent" />
         <EditText
             android:id="@+id/editText1"
-            android:text="质量"
+            android:text=""
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
-    </LinearLayout>
+    </GridLayout>
     <Button
         android:id="@+id/BB"
         android:layout_width="match_parent"

@@ -41,3 +41,4 @@ D:\pr\and\GlockChemAndroid\GlockChemAndroid\GlockChemAndroid\obj\Debug\android\a
 D:\pr\and\GlockChemAndroid\GlockChemAndroid\GlockChemAndroid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 D:\pr\and\GlockChemAndroid\GlockChemAndroid\GlockChemAndroid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 D:\pr\and\GlockChemAndroid\GlockChemAndroid\GlockChemAndroid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\pr\and\GlockChemAndroid\GlockChemAndroid\GlockChemAndroid\obj\Debug\res\layout\finv.xml
