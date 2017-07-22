@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="GlockChemAndroid.GlockChemAndroid" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="GlockChemAndroid.GlockChemAndroid" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="GlockChemAndroid" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="GlockChemAndroid" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="SolutionCalc" android:name="md5db078303234b2a78e4ae1fbac273029c.SolutionCalc" />
+    <activity android:label="MoleMassCalc" android:name="md5db078303234b2a78e4ae1fbac273029c.MoleMassCalc" />
+    <activity android:label="EquationCalc" android:name="md5db078303234b2a78e4ae1fbac273029c.EquationCalc" />
     <activity android:icon="@drawable/icon" android:label="GlockChemAndroid" android:name="md5db078303234b2a78e4ae1fbac273029c.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>2017/7/7 13:44:08</xs:documentation>
+    <xs:documentation>2017/7/22 15:21:38</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1056,6 +1056,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -1125,6 +1126,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -1141,6 +1143,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1374,6 +1377,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -1393,11 +1398,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -1413,7 +1440,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -1553,6 +1590,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -1622,6 +1660,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -1638,6 +1677,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1948,6 +1988,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -2017,6 +2058,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -2033,6 +2075,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2343,6 +2386,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -2412,6 +2456,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -2428,6 +2473,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4393,6 +4439,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -4462,6 +4509,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -4478,6 +4526,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4788,6 +4837,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -4857,6 +4907,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -4873,6 +4924,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5106,6 +5158,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -5125,11 +5179,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -5145,7 +5221,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -5262,6 +5348,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -5331,6 +5418,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -5347,6 +5435,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5873,6 +5962,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -5942,6 +6032,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -5958,6 +6049,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6268,6 +6360,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -6337,6 +6430,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -6353,6 +6447,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7514,6 +7609,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -7583,6 +7679,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -7599,6 +7696,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7909,6 +8007,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -7978,6 +8077,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -7994,6 +8094,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8367,6 +8468,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -8436,6 +8538,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -8452,6 +8555,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8762,6 +8866,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -8831,6 +8936,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -8847,6 +8953,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9253,6 +9360,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -9322,6 +9430,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -9338,6 +9447,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9619,6 +9729,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -9638,11 +9750,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -9658,7 +9792,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -9859,6 +10003,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -9928,6 +10073,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -9944,6 +10090,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -10332,6 +10479,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -10401,6 +10549,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -10417,6 +10566,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10902,6 +11052,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -10971,6 +11122,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -10987,6 +11139,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11472,6 +11625,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -11541,6 +11695,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -11557,6 +11712,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11867,6 +12023,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -11936,6 +12093,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -11952,6 +12110,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12185,6 +12344,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -12204,11 +12365,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -12224,7 +12407,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -12341,6 +12534,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -12410,6 +12604,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -12426,6 +12621,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12659,6 +12855,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -12678,11 +12876,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -12698,7 +12918,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -13175,6 +13405,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -13244,6 +13475,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -13260,6 +13492,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13493,6 +13726,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -13512,11 +13747,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -13532,7 +13789,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -13649,6 +13916,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -13718,6 +13986,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -13734,6 +14003,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14044,6 +14314,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -14113,6 +14384,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -14129,6 +14401,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14595,6 +14868,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -14664,6 +14938,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -14680,6 +14955,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14913,6 +15189,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -14932,11 +15210,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -14952,7 +15252,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -15292,6 +15602,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -15361,6 +15672,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -15377,6 +15689,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15687,6 +16000,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -15756,6 +16070,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -15772,6 +16087,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16271,6 +16587,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -16340,6 +16657,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -16356,6 +16674,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16841,6 +17160,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -16910,6 +17230,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -16926,6 +17247,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17159,6 +17481,8 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/_continue" />
+            <xs:enumeration value="@string/_return" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -17178,11 +17502,33 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/balance_failed" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/clear" />
+            <xs:enumeration value="@string/clear_success" />
+            <xs:enumeration value="@string/condition_type" />
+            <xs:enumeration value="@string/condition_type_mass" />
+            <xs:enumeration value="@string/condition_type_mole" />
+            <xs:enumeration value="@string/condition_value" />
+            <xs:enumeration value="@string/condition_zero" />
+            <xs:enumeration value="@string/confirm" />
+            <xs:enumeration value="@string/copy_equation" />
+            <xs:enumeration value="@string/copy_null" />
+            <xs:enumeration value="@string/copy_output" />
+            <xs:enumeration value="@string/equation_copied" />
+            <xs:enumeration value="@string/equation_empty_first_item" />
+            <xs:enumeration value="@string/equation_empty_imput" />
+            <xs:enumeration value="@string/equation_empty_inner_item" />
+            <xs:enumeration value="@string/equation_empty_side" />
+            <xs:enumeration value="@string/equation_hint" />
+            <xs:enumeration value="@string/equation_multi_part" />
+            <xs:enumeration value="@string/history" />
+            <xs:enumeration value="@string/input_condition" />
+            <xs:enumeration value="@string/input_equation" />
+            <xs:enumeration value="@string/input_formula" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_chooser_searching" />
             <xs:enumeration value="@string/mr_chooser_title" />
@@ -17198,7 +17544,17 @@
             <xs:enumeration value="@string/mr_controller_stop" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/new_calculation" />
+            <xs:enumeration value="@string/new_condition" />
+            <xs:enumeration value="@string/output_copied" />
+            <xs:enumeration value="@string/parse_error" />
+            <xs:enumeration value="@string/parse_success" />
+            <xs:enumeration value="@string/result_as_follows" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/substance_choose" />
+            <xs:enumeration value="@string/title_activity_calculation_output" />
+            <xs:enumeration value="@string/unimp" />
+            <xs:enumeration value="@string/unknown_atom" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -17315,6 +17671,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -17384,6 +17741,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -17400,6 +17758,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17885,6 +18244,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -17954,6 +18314,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -17970,6 +18331,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18592,6 +18954,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -18661,6 +19024,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -18677,6 +19041,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18987,6 +19352,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -19056,6 +19422,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -19072,6 +19439,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21166,6 +21534,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -21235,6 +21604,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -21251,6 +21621,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21814,74 +22185,7 @@
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/abc_action_bar_home_description" />
-            <xs:enumeration value="@string/abc_action_bar_home_description_format" />
-            <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
-            <xs:enumeration value="@string/abc_action_bar_up_description" />
-            <xs:enumeration value="@string/abc_action_menu_overflow_description" />
-            <xs:enumeration value="@string/abc_action_mode_done" />
-            <xs:enumeration value="@string/abc_activity_chooser_view_see_all" />
-            <xs:enumeration value="@string/abc_activitychooserview_choose_application" />
-            <xs:enumeration value="@string/abc_capital_off" />
-            <xs:enumeration value="@string/abc_capital_on" />
-            <xs:enumeration value="@string/abc_search_hint" />
-            <xs:enumeration value="@string/abc_searchview_description_clear" />
-            <xs:enumeration value="@string/abc_searchview_description_query" />
-            <xs:enumeration value="@string/abc_searchview_description_search" />
-            <xs:enumeration value="@string/abc_searchview_description_submit" />
-            <xs:enumeration value="@string/abc_searchview_description_voice" />
-            <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
-            <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
-            <xs:enumeration value="@string/abc_toolbar_collapse_description" />
-            <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/bottom_sheet_behavior" />
-            <xs:enumeration value="@string/character_counter_pattern" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/mr_button_content_description" />
-            <xs:enumeration value="@string/mr_chooser_searching" />
-            <xs:enumeration value="@string/mr_chooser_title" />
-            <xs:enumeration value="@string/mr_controller_casting_screen" />
-            <xs:enumeration value="@string/mr_controller_close_description" />
-            <xs:enumeration value="@string/mr_controller_collapse_group" />
-            <xs:enumeration value="@string/mr_controller_disconnect" />
-            <xs:enumeration value="@string/mr_controller_expand_group" />
-            <xs:enumeration value="@string/mr_controller_no_info_available" />
-            <xs:enumeration value="@string/mr_controller_no_media_selected" />
-            <xs:enumeration value="@string/mr_controller_pause" />
-            <xs:enumeration value="@string/mr_controller_play" />
-            <xs:enumeration value="@string/mr_controller_stop" />
-            <xs:enumeration value="@string/mr_system_route_name" />
-            <xs:enumeration value="@string/mr_user_route_category_name" />
-            <xs:enumeration value="@string/status_bar_notification_info_overflow" />
-            <xs:enumeration value="@android:string/cancel" />
-            <xs:enumeration value="@android:string/copy" />
-            <xs:enumeration value="@android:string/copyUrl" />
-            <xs:enumeration value="@android:string/cut" />
-            <xs:enumeration value="@android:string/defaultMsisdnAlphaTag" />
-            <xs:enumeration value="@android:string/defaultVoiceMailAlphaTag" />
-            <xs:enumeration value="@android:string/dialog_alert_title" />
-            <xs:enumeration value="@android:string/emptyPhoneNumber" />
-            <xs:enumeration value="@android:string/fingerprint_icon_content_description" />
-            <xs:enumeration value="@android:string/httpErrorBadUrl" />
-            <xs:enumeration value="@android:string/httpErrorUnsupportedScheme" />
-            <xs:enumeration value="@android:string/no" />
-            <xs:enumeration value="@android:string/ok" />
-            <xs:enumeration value="@android:string/paste" />
-            <xs:enumeration value="@android:string/search_go" />
-            <xs:enumeration value="@android:string/selectAll" />
-            <xs:enumeration value="@android:string/selectTextMode" />
-            <xs:enumeration value="@android:string/status_bar_notification_info_overflow" />
-            <xs:enumeration value="@android:string/unknownName" />
-            <xs:enumeration value="@android:string/untitled" />
-            <xs:enumeration value="@android:string/VideoView_error_button" />
-            <xs:enumeration value="@android:string/VideoView_error_text_invalid_progressive_playback" />
-            <xs:enumeration value="@android:string/VideoView_error_text_unknown" />
-            <xs:enumeration value="@android:string/VideoView_error_title" />
-            <xs:enumeration value="@android:string/yes" />
-            <xs:enumeration value="?android:attr/candidatesTextStyleSpans" />
-          </xs:restriction>
+          <xs:restriction base="xs:string" />
         </xs:simpleType>
       </xs:union>
     </xs:simpleType>
@@ -22799,6 +23103,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -22868,6 +23173,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -22884,6 +23190,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23369,6 +23676,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -23438,6 +23746,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -23454,6 +23763,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23764,6 +24074,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -23833,6 +24144,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -23849,6 +24161,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24207,6 +24520,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ec" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -24276,6 +24590,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/mm" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
             <xs:enumeration value="@drawable/mr_ic_audiotrack_light" />
@@ -24292,6 +24607,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/sp" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

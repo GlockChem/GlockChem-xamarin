@@ -1,5 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">GlockChemAndroid</string>
+    <string name="app_name">GlockChem4Droid</string>
+    <string name="input_equation">Input reaction equation:</string>
+    <string name="confirm">Confirm</string>
+    <string name="clear">Clear</string>
+    <string name="clear_success">Successfully cleared!</string>
+    <string name="parse_error">Parsing error: </string>
+    <string name="parse_success">Successfully parsed the equation!</string>
+    <string name="input_condition">Choose a substance and specify condition to calculate:</string>
+    <string name="substance_choose">Substance:</string>
+    <string name="condition_type">Type:</string>
+    <string name="equation_hint">Equation: [equation]</string>
+    <string name="balance_failed">Failed to balance the equation!</string>
+    <string name="condition_type_mass">Mass (g)</string>
+    <string name="condition_type_mole">Mole (mol)</string>
+    <string name="equation_empty_imput">You have input nothing!</string>
+    <string name="equation_multi_part">There are only two sides of an equation!</string>
+    <string name="equation_empty_side">One side of the equation input is empty!</string>
+    <string name="equation_empty_first_item">The first item of one side is empty!</string>
+    <string name="equation_empty_inner_item">One inner item of one side is empty!</string>
+    <string name="_continue">Continue</string>
+    <string name="copy_equation">Copy Equation</string>
+    <string name="_return">Go Back</string>
+    <string name="equation_copied">Equation copied!</string>
+    <string name="condition_value">Value:</string>
+    <string name="title_activity_calculation_output">Calculation Output</string>
+    <string name="copy_output">Copy Output</string>
+    <string name="new_calculation">New Equation</string>
+    <string name="output_copied">Output copied!</string>
+    <string name="condition_zero">Condition value can\'t be zero!</string>
+    <string name="result_as_follows">Calculation result:</string>
+    <string name="unknown_atom">Unknown atom:</string>
+    <string name="history">History</string>
+    <string name="new_condition">New Condition</string>
+    <string name="unimp">Unimplemented</string>
+    <string name="input_formula">Input formula:</string>
+    <string name="copy_null">The current result is empty!</string>
 </resources>

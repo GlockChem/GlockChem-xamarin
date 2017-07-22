@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GlockChem4Droid</string>
+    <string name="input_equation">请输入反应方程式：</string>
+    <string name="confirm">确定</string>
+    <string name="clear">清空</string>
+    <string name="clear_success">清空成功！</string>
+    <string name="parse_error">方程式分析错误：</string>
+    <string name="parse_success">方程式分析成功！</string>
+    <string name="input_condition">选择一个物质并指明条件以继续计算：</string>
+    <string name="substance_choose">选择物质：</string>
+    <string name="condition_type">条件类型：</string>
+    <string name="equation_hint">方程式：[equation]</string>
+    <string name="balance_failed">无法配平方程式！</string>
+    <string name="condition_type_mass">质量 (g)</string>
+    <string name="condition_type_mole">物质的量 (mol)</string>
+    <string name="equation_empty_imput">所输入的方程式为空！</string>
+    <string name="equation_multi_part">方程式应有且仅有两侧！</string>
+    <string name="equation_empty_side">所输入的反应物或生成物为空</string>
+    <string name="equation_empty_first_item">列表开头遇到空白项！</string>
+    <string name="equation_empty_inner_item">列表内遇到空白项！</string>
+    <string name="_continue">继续</string>
+    <string name="copy_equation">复制方程式</string>
+    <string name="_return">返回</string>
+    <string name="equation_copied">方程式已复制到剪贴板！</string>
+    <string name="condition_value">条件数值：</string>
+    <string name="title_activity_calculation_output">计算结果</string>
+    <string name="copy_output">复制输出</string>
+    <string name="new_calculation">新方程式</string>
+    <string name="output_copied">输出已复制到剪贴板！</string>
+    <string name="condition_zero">给定的条件数值不能为零！</string>
+    <string name="result_as_follows">计算结果如下：</string>
+    <string name="unknown_atom">未知原子：</string>
+    <string name="history">历史</string>
+    <string name="new_condition">重新计算</string>
+    <string name="unimp">功能尚不可用</string>
+    <string name="input_formula">请输入化学式：</string>
+    <string name="copy_null">当前结果为空！</string>
+</resources>

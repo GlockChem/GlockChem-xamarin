@@ -103,19 +103,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdvNum.cs" />
-    <Compile Include="Equation.cs" />
-    <Compile Include="EquationBalancer.cs" />
-    <Compile Include="EquationCalculator.cs" />
-    <Compile Include="Formula.cs" />
-    <Compile Include="HashMapHelperClass.cs" />
+    <Compile Include="SolutionCalc.cs" />
+    <Compile Include="MoleMassCalc.cs" />
+    <Compile Include="EquationCalc.cs" />
+    <Compile Include="scripts\AdvNum.cs" />
+    <Compile Include="scripts\Equation.cs" />
+    <Compile Include="scripts\EquationBalancer.cs" />
+    <Compile Include="scripts\EquationCalculator.cs" />
+    <Compile Include="scripts\Formula.cs" />
+    <Compile Include="scripts\HashMapHelperClass.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Matrix.cs" />
-    <Compile Include="Pair.cs" />
-    <Compile Include="RectangularArrays.cs" />
+    <Compile Include="scripts\Matrix.cs" />
+    <Compile Include="scripts\Pair.cs" />
+    <Compile Include="scripts\RectangularArrays.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RMDatabase.cs" />
+    <Compile Include="scripts\RMDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -128,6 +131,15 @@
     <AndroidResource Include="Resources\layout\finv.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\eqfo.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\scv0.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\mmcv0.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -135,13 +147,34 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\values-zh\strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values-ja\strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

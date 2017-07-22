@@ -3,25 +3,33 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="请输入方程式"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    <ImageButton
+        android:src="@drawable/ec"
+        android:id="@+id/iB1"
+        android:layout_width="match_parent"
+        android:layout_height="180.0dp"
+        android:scaleType="fitCenter" />
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-    <TextView
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/er" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText1"
-        android:text="H2+O2=H2O" />
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/mm"
+            android:id="@+id/iB2"
+            android:layout_width="180.0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+        <ImageButton
+            android:src="@drawable/sp"
+            android:layout_width="180.0dp"
+            android:layout_height="90.0dp"
+            android:id="@+id/iB3"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
     <Button
-        android:id="@+id/BB"
+        android:text="@string/_return"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="确定" />
+        android:id="@+id/ex" />
 </LinearLayout>
