@@ -28,6 +28,11 @@
             android:scaleType="fitCenter" />
     </LinearLayout>
     <Button
+        android:text="@string/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about" />
+    <Button
         android:text="@string/_return"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

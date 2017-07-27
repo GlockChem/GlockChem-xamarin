@@ -164,8 +164,8 @@ namespace Core
 					}
 					else
 					{ // 空段的处理
-						//TODO: 空段
-					}
+                        throw new Exception("formula:empty_segment");
+                    }
 				}
 				else if (inFormula[0] == '(')
 				{

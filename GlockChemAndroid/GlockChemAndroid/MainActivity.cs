@@ -41,6 +41,12 @@ namespace GlockChemAndroid
                 Finish();
                 Process.KillProcess(Process.MyPid());
             };
+            Button ab = FindViewById<Button>(Resource.Id.about);
+            ab.Click += delegate
+            {
+                Toast.MakeText(this, "GlockChem4Droid\n\nCredit to GlockChem Project Team:\n - DuckSoft\n - LionNatsu\n - EAirPeter\n - NAP64\n...and more", ToastLength.Long).Show();
+            };
+
         }
 
     }

@@ -48,5 +48,7 @@ D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\re
 D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\drawable\sp.png
 D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\layout\scv0.xml
 D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\values-zh\strings.xml
-D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\values-ja\strings.xml
 D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\layout\mmcv0.xml
+D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\drawable-zh\ec.png
+D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\drawable-zh\mm.png
+D:\pr\android\GlockChem-xamarin\GlockChemAndroid\GlockChemAndroid\obj\Release\res\drawable-zh\sp.png

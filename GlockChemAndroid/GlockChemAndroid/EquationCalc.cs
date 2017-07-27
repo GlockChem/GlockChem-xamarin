@@ -54,7 +54,7 @@ namespace GlockChemAndroid
                 String strInput = t.Text;
                 if (strInput == "")
                 {
-                    er.Text = "错误：输入为空！";
+                    er.Text = Resources.GetText(Resource.String.equation_empty_imput);
                     Toast.MakeText(this, er.Text, ToastLength.Short).Show();
                 }
                 try
@@ -151,13 +151,13 @@ namespace GlockChemAndroid
                 }
                 catch (Exception e)
                 {
-                    er.Text = "给定数值无效";
+                    er.Text = Resources.GetText(Resource.String.invalid_number);
                     Toast.MakeText(this, er.Text, ToastLength.Short).Show();
                     return;
                 }
                 if (numCondition <= 0)
                 {
-                    er.Text = "给定数值无效";
+                    er.Text = Resources.GetText(Resource.String.invalid_number);
                     Toast.MakeText(this, er.Text, ToastLength.Short).Show();
                     return;
                 }
@@ -184,7 +184,7 @@ namespace GlockChemAndroid
                 }
                 if (flag)
                 {
-                    er.Text = "未知错误1";
+                    er.Text = Resources.GetText(Resource.String.unknown_error) + "1";
                     Toast.MakeText(this, er.Text, ToastLength.Short).Show();
                 }
                 else
@@ -251,7 +251,7 @@ namespace GlockChemAndroid
             }
             catch (Exception e1)
             {
-                er.Text = "未知错误2";
+                er.Text = Resources.GetText(Resource.String.unknown_error) + "2";
                 Toast.MakeText(this, er.Text, ToastLength.Short).Show();
                 return;
             }
@@ -276,7 +276,7 @@ namespace GlockChemAndroid
             TextView tx4 = FindViewById<TextView>(Resource.Id.textView4);
             Spinner spinner = (Spinner)sender;
             pass = (string)spinner.GetItemAtPosition(e.Position);
-            tx4.Text = "已选择 " + pass;
+            tx4.Text = Resources.GetText(Resource.String.selected) + pass;
         }
         private void Spinner_ConditionSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {

@@ -45,12 +45,19 @@ namespace GlockChemAndroid
                 String strInput = t.Text;
                 if (strInput == "")
                 {
-                    er.Text = "错误：输入为空！";
+                    er.Text = Resources.GetText(Resource.String.formula_empty_imput);
                     Toast.MakeText(this, er.Text, ToastLength.Short).Show();
                 }
                 try
                 {
                     formula = new Core.Formula(strInput);
+                    Core.Equation eq = new Core.Equation(t.Text + "=" + t.Text);
+                    Core.EquationBalancer eb = new Core.EquationBalancer(eq);
+
+                    Core.EquationCalculator.EquationCondition condition = new Core.EquationCalculator.EquationConditionMole(eq.reactant[0], new Core.AdvNum(1));
+                    Core.EquationCalculator calc = new Core.EquationCalculator(eq);
+                    calc.calcMass(condition, eq.reactant[0]).toDouble();
+                    r.Text = calc.calcMass(condition, eq.reactant[0]).toDouble() + " g/mol";
                 }
                 catch (Exception e)
                 {
@@ -60,13 +67,6 @@ namespace GlockChemAndroid
                     return;
                 }
                 history.Add(t.Text);
-                Core.Equation eq = new Core.Equation(t.Text + "=" + t.Text);
-                Core.EquationBalancer eb = new Core.EquationBalancer(eq);
-
-                Core.EquationCalculator.EquationCondition condition = new Core.EquationCalculator.EquationConditionMole(eq.reactant[0], new Core.AdvNum(1));
-                Core.EquationCalculator calc = new Core.EquationCalculator(eq);
-                calc.calcMass(condition, eq.reactant[0]).toDouble();
-                r.Text = calc.calcMass(condition, eq.reactant[0]).toDouble()+" g/mol";
                 str = new List<string>();
                 foreach (string i in history)
                     str.Add(i);

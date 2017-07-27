@@ -36,4 +36,9 @@
     <string name="unimp">功能尚不可用</string>
     <string name="input_formula">请输入化学式：</string>
     <string name="copy_null">当前结果为空！</string>
+    <string name="invalid_number">给定数值无效</string>
+    <string name="selected">已选择 </string>
+    <string name="unknown_error">未知错误</string>
+    <string name="formula_empty_imput">输入为空！</string>
+    <string name="about">关于</string>
 </resources>

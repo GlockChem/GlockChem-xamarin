@@ -35,4 +35,9 @@
     <string name="unimp">Unimplemented</string>
     <string name="input_formula">Input formula:</string>
     <string name="copy_null">The current result is empty!</string>
+    <string name="invalid_number">invalid number input</string>
+    <string name="selected">Selected </string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="formula_empty_imput">Empty Input!</string>
+    <string name="about">About</string>
 </resources>
